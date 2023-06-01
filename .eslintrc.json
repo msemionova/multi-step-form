@@ -1,5 +1,21 @@
 {
-  "extends": "next/core-web-vitals",
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.json"],
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
   "rules": {
     "eol-last": ["error", "always"],
     "max-len": ["error", { "code": 100 }],
