@@ -1,0 +1,21 @@
+@import '../../../styles/main';
+
+.container {
+  background-color: $color-white;
+  box-shadow: $color-shadow-dark;
+  max-width: 940px;
+  min-height: 600px;
+  border-radius: 18px;
+  width: 90%;
+  height: auto;
+  padding: 16px;
+  display: flex;
+
+  @include centerHorizontalVertical;
+}
+
+.sidebar {
+  background: no-repeat center/100% url("../../public/assets/images/bg-sidebar-desktop.svg");
+  width: 274px;
+  height: auto;
+}
