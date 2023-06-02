@@ -1,24 +1,21 @@
 //COLORS
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+$color-primary: hsl(243, 100%, 62%);
+$color-primary-light: hsl(228, 100%, 84%);
+$color-primary-dark: hsl(213, 96%, 18%);
 
-$color-secondary-light: #ffb900;
-$color-secondary-dark: #ff7730;
+$color-secondary: hsl(354, 84%, 57%);
 
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
+$color-tertiary: hsl(206, 94%, 87%);
 
 $color-gray-light-1: #EEF5FF;
-$color-gray-light-2: #EEE;
-$color-gray-dark-1: #777;
-$color-gray-dark-2: #999;
-$color-gray-dark-3: #333;
+$color-gray-light-2: hsl(231, 100%, 99%);
+$color-gray-dark-1: hsl(231, 11%, 63%);
+$color-gray-dark-2: hsl(229, 24%, 87%);
 $color-white: #FFF;
 $color-black: #000;
 
-$color-shadow-light: rgba($color-black, .15);
-$color-shadow-dark: rgba($color-black, .5);
+$color-shadow-light: rgba($color-gray-dark-1, .15);
+$color-shadow-dark: rgba($color-gray-dark-1, .5);
 
 //SHADOWS
 $shadow-extra-small: 0 .5rem 1rem $color-shadow-light;
