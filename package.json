@@ -12,9 +12,9 @@
     "lint:fix": "node_modules/.bin/eslint --fix .",
     "test": "node_modules/.bin/jest --ci --coverage",
     "test:watch": "node_modules/.bin/jest --watch",
-    "get-tokens": "sh get_tokens.sh",
     "transform-tokens": "yarn token-transformer tokens/tokens.json tokens/transformedTokens.json global",
-    "build-tokens": "yarn get-tokens && yarn transform-tokens && yarn style-dictionary build --config config.cjs"
+    "build-tokens": "yarn style-dictionary build --config config.cjs",
+    "get-tokens": "sh get_tokens.sh"
   },
   "browserslist": {
     "production": [
