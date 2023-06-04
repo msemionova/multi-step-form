@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background-color: $color-gray-light-1;
+  background-color: var(--color-gray-background);
   box-sizing: border-box;
   padding: 3rem;
   margin: 0;
@@ -46,6 +46,6 @@ code {
 }
 
 ::selection {
-  background-color: $color-primary;
-  color: $color-white;
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }

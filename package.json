@@ -11,7 +11,10 @@
     "lint": "node_modules/.bin/eslint .",
     "lint:fix": "node_modules/.bin/eslint --fix .",
     "test": "node_modules/.bin/jest --ci --coverage",
-    "test:watch": "node_modules/.bin/jest --watch"
+    "test:watch": "node_modules/.bin/jest --watch",
+    "get-tokens": "sh get_tokens.sh",
+    "transform-tokens": "yarn token-transformer tokens/tokens.json tokens/transformedTokens.json global",
+    "build-tokens": "yarn get-tokens && yarn transform-tokens && yarn style-dictionary build --config config.cjs"
   },
   "browserslist": {
     "production": [
@@ -66,6 +69,8 @@
     "react-test-renderer": "^18.2.0",
     "sass": "^1.62.1",
     "storybook": "^7.0.18",
+    "style-dictionary": "^3.8.0",
+    "token-transformer": "^0.0.33",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
     "webpack": "^5.85.0"

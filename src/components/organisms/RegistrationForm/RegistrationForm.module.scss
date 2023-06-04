@@ -1,8 +1,8 @@
 @import '../../../styles/main';
 
 .container {
-  background-color: $color-white;
-  box-shadow: $shadow-medium;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow-medium);
   max-width: 94rem;
   min-height: 60rem;
   border-radius: 1.8rem;
