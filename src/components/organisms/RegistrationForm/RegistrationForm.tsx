@@ -9,7 +9,6 @@ export default function RegistrationForm() {
         <CircleNumber isActive={true}>1</CircleNumber>
         <CircleNumber>2</CircleNumber>
       </div>
-
     </div>
   );
 }
