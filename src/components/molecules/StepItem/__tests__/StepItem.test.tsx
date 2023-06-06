@@ -6,7 +6,7 @@ import StepItem from '../StepItem';
 describe('<StepItem />', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<StepItem text='1'></StepItem>)
+      .create(<StepItem number={1} title='Test'></StepItem>)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

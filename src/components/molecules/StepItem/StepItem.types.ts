@@ -1,3 +1,5 @@
 export type StepItemProps = {
-  text?: string
+  number: number,
+  title: string,
+  isActive?: boolean
 }

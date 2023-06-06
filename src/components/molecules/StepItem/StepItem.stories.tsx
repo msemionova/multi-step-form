@@ -11,6 +11,15 @@ type Story = StoryObj<typeof StepItem>;
 
 export const Default: Story = {
   args: {
-    text: '1'
+    number: 1,
+    title: 'Your info'
+  }
+};
+
+export const Active: Story = {
+  args: {
+    number: 1,
+    title: 'Your info',
+    isActive: true
   }
 };

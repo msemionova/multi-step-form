@@ -4,6 +4,18 @@ exports[`<StepItem /> renders correctly 1`] = `
 <div
   className="step"
 >
-  1
+  <div
+    className="circle"
+  >
+    1
+  </div>
+  <div>
+    <span>
+      Step 1
+    </span>
+    <h2>
+      Test
+    </h2>
+  </div>
 </div>
 `;

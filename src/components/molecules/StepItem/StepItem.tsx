@@ -1,10 +1,18 @@
 import styles from './StepItem.module.scss';
 import { StepItemProps } from './StepItem.types';
 
-export default function StepItem({ text }: StepItemProps) {
+import CircleNumber from '../../atoms/CircleNumber/CircleNumber';
+
+export default function StepItem({ number, title, isActive = false }: StepItemProps) {
+  const label = `Step ${number}`;
+
   return (
     <div className={styles.step}>
-      {text}
+      <CircleNumber isActive={isActive}>{number}</CircleNumber>
+      <div>
+        <span>{label}</span>
+        <h2>{title}</h2>
+      </div>
     </div>
   );
 }
