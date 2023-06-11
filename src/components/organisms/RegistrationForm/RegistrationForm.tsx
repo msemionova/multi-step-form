@@ -1,29 +1,19 @@
 import { useState } from 'react';
+import activeStepContext from 'src/context/activeStepContext';
 import styles from './RegistrationForm.module.scss';
-import StepItem from 'src/components/molecules/StepItem/StepItem';
+import Sidebar from 'src/components/molecules/Sidebar/Sidebar';
+import StepContent from 'src/components/molecules/StepContent/StepContent';
+import formData from 'src/formData';
 
 export default function RegistrationForm() {
-  const [activeStep] = useState(0);
-  const steps = [
-    'Your info',
-    'Select plan',
-    'Add-ons',
-    'Summary'
-  ];
+  const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <div className={styles['container']}>
-      <div className={styles['sidebar']}>
-        {
-          steps.map((step, index) =>
-            <StepItem
-              key={Math.random()}
-              number={index + 1}
-              title={step}
-              isActive={index === activeStep}
-            />)
-        }
+    <activeStepContext.Provider value={{ activeStep, setActiveStep }}>
+      <div className={styles.container}>
+        <Sidebar data={formData} />
+        <StepContent data={formData} />
       </div>
-    </div>
+    </activeStepContext.Provider>
   );
 }

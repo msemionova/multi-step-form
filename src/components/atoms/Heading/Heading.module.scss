@@ -1,0 +1,10 @@
+.heading {
+  h1 {
+    font: var(--typography-desktop-heading);
+    margin-bottom: 1.6rem;
+  }
+  p {
+    font: var(--typography-subheading);
+    color: var(--color-gray-text);
+  }
+}

@@ -1,12 +1,11 @@
-@use 'abstracts/figma_variables';
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+  @use 'abstracts/figma_variables';
 
-@import "abstracts/mixins";
-@import "abstracts/variables";
+  @import "abstracts/mixins";
+  @import "abstracts/variables";
 
-@import "base/base";
-@import "base/animations";
-@import "base/typography";
-@import "base/utilities";
+  @import "base/base";
+  @import "base/animations";
+  @import "base/typography";
+  @import "base/utilities";
 
-@import "layout/grid";
+  @import "layout/grid";

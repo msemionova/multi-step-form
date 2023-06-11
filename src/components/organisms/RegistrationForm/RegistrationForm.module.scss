@@ -1,22 +1,13 @@
-@import '../../../styles/main';
+@import '../../../styles/abstracts/mixins';
 
 .container {
   background-color: var(--color-white);
   box-shadow: var(--box-shadow-medium);
   max-width: 94rem;
-  min-height: 60rem;
-  border-radius: 1.8rem;
+  border-radius: 1.4rem;
   width: 90%;
-  height: auto;
   padding: 1.6rem;
   display: flex;
 
   @include centerHorizontalVertical;
-}
-
-.sidebar {
-  padding: 3.8rem;
-  background: no-repeat center/100% url("~/public/assets/images/bg-sidebar-desktop.svg");
-  width: 27.4rem;
-  height: auto;
 }

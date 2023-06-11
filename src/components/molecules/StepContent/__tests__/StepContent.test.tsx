@@ -1,12 +1,13 @@
 import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
+import formData from 'src/formData';
 
-import StepItem from '../StepItem';
+import StepContent from '../StepContent';
 
-describe('<StepItem />', () => {
+describe('<StepContent />', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<StepItem number={1} title='Test'></StepItem>)
+      .create(<StepContent data={formData}></StepContent>)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

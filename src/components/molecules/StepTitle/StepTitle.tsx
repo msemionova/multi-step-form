@@ -1,9 +1,9 @@
-import styles from './StepItem.module.scss';
-import { StepItemProps } from './StepItem.types';
+import styles from './StepTitle.module.scss';
+import { StepTitleProps } from './StepTitle.types';
 
 import CircleNumber from '../../atoms/CircleNumber/CircleNumber';
 
-export default function StepItem({ number, title, isActive = false }: StepItemProps) {
+export default function StepTitle({ number, title, isActive = false }: StepTitleProps) {
   const label = `Step ${number}`;
 
   return (

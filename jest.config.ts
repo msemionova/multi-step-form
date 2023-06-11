@@ -1,6 +1,7 @@
 import type { Config } from '@jest/types'
 
 const config: Config.InitialOptions = {
+  modulePaths: ["<rootDir>/"],
   testEnvironment: 'jest-environment-jsdom',
   transform: {
     /* fixme: maybe not support js(x) at all ? */
@@ -10,13 +11,7 @@ const config: Config.InitialOptions = {
   },
   collectCoverage: true,
   collectCoverageFrom: [
-    '**/*.{js,jsx,ts,tsx}',
-    '!**/node_modules/**',
-    '!**/coverage/**',
-    '!**/.storybook/**',
-    '!**/storybook-static/**',
-    '!**/jest.config.ts',
-    '!**/index.tsx',
+    'src/components/**/*.{js,jsx,ts,tsx}',
     '!**/*.stories.tsx',
     '!**/*.types.ts'
   ],

@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import StepItem from './StepItem';
+import StepTitle from './StepTitle';
 
-const meta: Meta<typeof StepItem> = {
-  component: StepItem,
+const meta: Meta<typeof StepTitle> = {
+  component: StepTitle,
 };
 
 export default meta;
-type Story = StoryObj<typeof StepItem>;
+type Story = StoryObj<typeof StepTitle>;
 
 export const Default: Story = {
   args: {
