@@ -1,5 +1,5 @@
+import { FormDataProps } from 'src/data/formData.types';
+
 export type SidebarProps = {
-  data: {
-    [key: string]: unknown;
-  }[];
+  formData: FormDataProps
 };

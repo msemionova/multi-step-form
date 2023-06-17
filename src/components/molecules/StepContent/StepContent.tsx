@@ -1,20 +1,24 @@
-import { useContext } from 'react';
-import activeStepContext from 'src/context/activeStepContext';
 import styles from './StepContent.module.scss';
 import { StepContentProps } from './StepContent.types';
-import Heading from 'src/components/atoms/Heading/Heading';
+import { Heading } from 'src/components/atoms';
+import { FieldGroup } from 'src/components/molecules';
 
-export default function StepContent({ data }: StepContentProps) {
-  const { activeStep } = useContext(activeStepContext);
-  const currentStepData = data[activeStep];
-
+export default function StepContent({ stepData }: StepContentProps) {
   return (
     <div className={styles.content}>
       <Heading
         key={Math.random()}
-        title={currentStepData.title as string}
-        subtitle={currentStepData.subtitle as string}
+        title={stepData.title}
+        subtitle={stepData.subtitle}
       />
+      {
+        stepData.fieldGroups?.map(fieldGroup =>
+          <FieldGroup
+            key={`fieldgroup_${Math.random()}`}
+            fieldGroupData={fieldGroup}
+          />
+        )
+      }
     </div>
   );
 }

@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import activeStepContext from 'src/context/activeStepContext';
 import styles from './RegistrationForm.module.scss';
-import Sidebar from 'src/components/molecules/Sidebar/Sidebar';
-import StepContent from 'src/components/molecules/StepContent/StepContent';
-import formData from 'src/formData';
+import { Sidebar, StepContent } from 'src/components/molecules';
+import formData from 'src/data/formData';
 
 export default function RegistrationForm() {
   const [activeStep, setActiveStep] = useState(0);
@@ -11,8 +10,8 @@ export default function RegistrationForm() {
   return (
     <activeStepContext.Provider value={{ activeStep, setActiveStep }}>
       <div className={styles.container}>
-        <Sidebar data={formData} />
-        <StepContent data={formData} />
+        <Sidebar formData={formData} />
+        <StepContent stepData={formData[activeStep]} />
       </div>
     </activeStepContext.Provider>
   );

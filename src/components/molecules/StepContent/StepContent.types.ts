@@ -1,5 +1,5 @@
+import { FormStepProps } from 'src/data/formData.types';
+
 export type StepContentProps = {
-  data: {
-    [key: string]: unknown;
-  }[];
+  stepData: FormStepProps
 };

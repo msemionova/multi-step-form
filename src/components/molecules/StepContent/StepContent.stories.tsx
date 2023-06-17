@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import StepContent from './StepContent';
-import formData from 'src/formData';
+import formData from 'src/data/formData';
 
 const meta: Meta<typeof StepContent> = {
   component: StepContent
@@ -12,6 +12,6 @@ type Story = StoryObj<typeof StepContent>;
 
 export const Default: Story = {
   args: {
-    data: formData
+    stepData: formData[0]
   }
 };

@@ -1,4 +1,6 @@
-const formData = [
+import { FormDataProps } from './formData.types';
+
+const formData: FormDataProps = [
   {
     name: 'Your info',
     title: 'Personal info',
@@ -8,19 +10,27 @@ const formData = [
         type: 'inputs',
         fields: [
           {
-            type: 'text',
+            id: 'username',
             label: 'Name',
-            placeholder: 'John Doe'
+            placeholder: 'e.g. John Doe',
+            minlength: 2,
+            maxlength: 50,
+            required: true
           },
           {
-            type: 'email',
+            id: 'email',
             label: 'Email Address',
-            placeholder: 'johndoe@email.com'
+            type: 'email',
+            placeholder: 'e.g. johndoe@email.com',
+            required: true
           },
           {
-            type: 'tel',
+            id: 'phone',
             label: 'Phone Number',
-            placeholder: 'e.g. +1 234 567 890'
+            type: 'tel',
+            placeholder: 'e.g. +37312345678',
+            pattern: '[+]373[6-7][0-9][0-9]{6}',
+            required: true
           }
         ]
       }

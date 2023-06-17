@@ -14,5 +14,67 @@ exports[`<StepContent /> renders correctly 1`] = `
       Please provide your name, email address, and phone number.
     </p>
   </div>
+  <div
+    className="field-group"
+  >
+    <div
+      className="input-field"
+    >
+      <label
+        className="label"
+        htmlFor="username"
+      >
+        Name
+      </label>
+      <input
+        className="input"
+        id="username"
+        name="username"
+        placeholder="e.g. John Doe"
+        required={true}
+        title=""
+        type="text"
+      />
+    </div>
+    <div
+      className="input-field"
+    >
+      <label
+        className="label"
+        htmlFor="email"
+      >
+        Email Address
+      </label>
+      <input
+        className="input"
+        id="email"
+        name="email"
+        placeholder="e.g. johndoe@email.com"
+        required={true}
+        title=""
+        type="email"
+      />
+    </div>
+    <div
+      className="input-field"
+    >
+      <label
+        className="label"
+        htmlFor="phone"
+      >
+        Phone Number
+      </label>
+      <input
+        className="input"
+        id="phone"
+        name="phone"
+        pattern="[+]373[6-7][0-9][0-9]{6}"
+        placeholder="e.g. +37312345678"
+        required={true}
+        title=""
+        type="tel"
+      />
+    </div>
+  </div>
 </div>
 `;

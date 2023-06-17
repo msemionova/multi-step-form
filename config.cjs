@@ -17,7 +17,7 @@ StyleDictionary.registerTransform({
   matcher: token => token.type === 'border',
   transformer: (token) => {
     const { value } = token;
-    return `${pxToRem(value.width)} solid ${value.color}`;
+    return `${value.width} solid ${value.color}`;
   }
 });
 

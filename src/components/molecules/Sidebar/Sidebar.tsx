@@ -2,19 +2,19 @@ import { useContext } from 'react';
 import activeStepContext from 'src/context/activeStepContext';
 import styles from './Sidebar.module.scss';
 import { SidebarProps } from './Sidebar.types';
-import StepTitle from 'src/components/molecules/StepTitle/StepTitle';
+import { StepTitle } from 'src/components/molecules';
 
-export default function Sidebar({ data }: SidebarProps) {
+export default function Sidebar({ formData }: SidebarProps) {
   const { activeStep } = useContext(activeStepContext);
 
   return (
     <div className={styles.sidebar}>
       {
-        data.map((step, index) =>
+        formData.map((step, index) =>
           <StepTitle
-            key={Math.random()}
+            key={`step_${Math.random()}`}
             number={index + 1}
-            title={step.name as string}
+            title={step.name}
             isActive={index === activeStep}
           />)
       }

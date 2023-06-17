@@ -13,7 +13,8 @@ const config: Config.InitialOptions = {
   collectCoverageFrom: [
     'src/components/**/*.{js,jsx,ts,tsx}',
     '!**/*.stories.tsx',
-    '!**/*.types.ts'
+    '!**/*.types.ts',
+    '!**/index.ts'
   ],
   coverageDirectory: './coverage',
   coverageReporters: ['html', 'text', 'cobertura', 'lcov'],

@@ -1,13 +1,13 @@
 import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 import formData from 'src/data/formData';
+import FieldGroup from '../FieldGroup';
 
-import Sidebar from '../Sidebar';
-
-describe('<Sidebar />', () => {
+describe('<FieldGroup />', () => {
   it('renders correctly', () => {
+    const fieldGroupData = formData[0]?.fieldGroups?.[0];
     const tree = renderer
-      .create(<Sidebar formData={formData}></Sidebar>)
+      .create(<FieldGroup fieldGroupData={fieldGroupData}></FieldGroup >)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

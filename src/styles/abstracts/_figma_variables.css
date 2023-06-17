@@ -15,12 +15,12 @@ body {
   --color-secondary: #FFFA7B;
   --color-white: #FFFFFF;
   --color-sun-gradient: linear-gradient(195.69deg, #FFFA7B 21.38%, #3D3D67 96.31%);
-  --border-primary: 0.1rem solid #7273FF;
-  --border-secondary: 0.1rem solid #D2D7FF;
-  --border-white: 0.1rem solid #FFFFFF;
-  --border-checkmark: 0.2rem solid #FFFFFF;
+  --border-primary: 1px solid #7273FF;
+  --border-secondary: 1px solid #D2D7FF;
+  --border-white: 1px solid #FFFFFF;
+  --border-checkmark: 2px solid #FFFFFF;
   --color-error: #FF3868;
-  --border-error: 0.1rem solid #FF3868;
+  --border-error: 1px solid #FF3868;
   --box-shadow-medium: 0 0.4rem 2rem #b4b9e261;
   --border-radius-big: 14px;
   --border-radius-medium: 8px;
