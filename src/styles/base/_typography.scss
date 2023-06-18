@@ -1,52 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
 body {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
+  font: var(--typography-paragraph);
   color: var(--color-black-text);
-}
-
-.heading-primary {
-  color: var(--color-white);
-  text-transform: uppercase;
-
-  backface-visibility: hidden;
-  margin-bottom: 6rem;
-
-  &--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.8rem;
-
-    animation: moveInLeft 600ms ease-out;
-
-    @include respond(phone) {
-      font-size: 5rem;
-      letter-spacing: 1rem;
-    }
-  }
-
-  &--sub {
-    display: block;
-    font-size: 2.4rem;
-    font-weight: 700;
-    letter-spacing: 1.6rem;
-
-    animation: moveInRight 600ms ease-out;
-
-    @include respond(phone) {
-      font-size: 2rem;
-      letter-spacing: .5rem;
-    }
-  }
-}
-
-.paragraph {
-  font-size: $default-font-size;
-
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
+  text-rendering: geometricPrecision;
 }

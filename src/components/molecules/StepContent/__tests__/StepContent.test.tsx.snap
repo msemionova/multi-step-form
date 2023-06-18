@@ -76,5 +76,21 @@ exports[`<StepContent /> renders correctly 1`] = `
       />
     </div>
   </div>
+  <div
+    className="buttons"
+  >
+    <div />
+    <button
+      aria-label="next button"
+      className="button button--primary"
+      data-testid="next-button"
+      id="next-button"
+      onClick={[Function]}
+    >
+      <span>
+        Next Step
+      </span>
+    </button>
+  </div>
 </div>
 `;

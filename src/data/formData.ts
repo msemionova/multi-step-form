@@ -49,25 +49,22 @@ const formData: FormDataProps = [
         type: 'plans',
         fields: [
           {
-            iconType: 'arcade',
-            name: 'Arcade',
+            id: 'arcade',
             priceMonthly: 9,
             priceYearly: 90,
-            currency: 'USD'
+            currency: '$'
           },
           {
-            iconType: 'advanced',
-            name: 'Advanced',
+            id: 'advanced',
             priceMonthly: 12,
             priceYearly: 120,
-            currency: 'USD'
+            currency: '$'
           },
           {
-            iconType: 'pro',
-            name: 'Pro',
+            id: 'pro',
             priceMonthly: 15,
             priceYearly: 150,
-            currency: 'USD'
+            currency: '$'
           }
         ]
       }

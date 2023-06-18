@@ -18,8 +18,7 @@ type InputFieldProps = {
 };
 
 type PlanFieldProps = {
-  iconType: string;
-  name: string;
+  id: string;
   priceMonthly: number;
   priceYearly: number;
   currency: string;
