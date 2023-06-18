@@ -9,10 +9,17 @@ const meta: Meta<typeof FieldGroup> = {
 
 export default meta;
 type Story = StoryObj<typeof FieldGroup>;
-const fieldGroupData = formData[0]?.fieldGroups?.[0];
+const inputsData = formData[0]?.fieldGroups?.[0];
+const plansData = formData[1]?.fieldGroups?.[0];
 
-export const Default: Story = {
+export const Inputs: Story = {
   args: {
-    fieldGroupData
+    fieldGroupData: inputsData
+  }
+};
+
+export const Plans: Story = {
+  args: {
+    fieldGroupData: plansData
   }
 };

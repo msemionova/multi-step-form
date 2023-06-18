@@ -10,8 +10,14 @@ const meta: Meta<typeof StepContent> = {
 export default meta;
 type Story = StoryObj<typeof StepContent>;
 
-export const Default: Story = {
+export const Step1: Story = {
   args: {
     stepData: formData[0]
+  }
+};
+
+export const Step2: Story = {
+  args: {
+    stepData: formData[1]
   }
 };
