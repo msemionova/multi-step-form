@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/multi-step-form/static/css/main.c3ee7a56.css",
+    "main.js": "/multi-step-form/static/js/main.6c1365b9.js",
+    "static/js/111.ca628dd6.chunk.js": "/multi-step-form/static/js/111.ca628dd6.chunk.js",
+    "static/media/icon-pro.svg": "/multi-step-form/static/media/icon-pro.c65be84b42eb547b2dd7.svg",
+    "static/media/icon-advanced.svg": "/multi-step-form/static/media/icon-advanced.cb8acd1079ea3719d5b7.svg",
+    "static/media/bg-sidebar-desktop.svg": "/multi-step-form/static/media/bg-sidebar-desktop.387b376df2390567b95c.svg",
+    "static/media/icon-arcade.svg": "/multi-step-form/static/media/icon-arcade.a4bbcfa961ce0d5a83b7.svg",
+    "index.html": "/multi-step-form/index.html",
+    "main.c3ee7a56.css.map": "/multi-step-form/static/css/main.c3ee7a56.css.map",
+    "main.6c1365b9.js.map": "/multi-step-form/static/js/main.6c1365b9.js.map",
+    "111.ca628dd6.chunk.js.map": "/multi-step-form/static/js/111.ca628dd6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3ee7a56.css",
+    "static/js/main.6c1365b9.js"
+  ]
+}
