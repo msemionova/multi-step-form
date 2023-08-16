@@ -25,6 +25,7 @@ type PlanFieldProps = {
 };
 
 type AddonFieldProps = {
+  id: string;
   title: string;
   description: string;
   priceMonthly: number;

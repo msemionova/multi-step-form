@@ -11,6 +11,7 @@ export default meta;
 type Story = StoryObj<typeof FieldGroup>;
 const inputsData = formData[0]?.fieldGroups?.[0];
 const plansData = formData[1]?.fieldGroups?.[0];
+const addonsData = formData[2]?.fieldGroups?.[0];
 
 export const Inputs: Story = {
   args: {
@@ -21,5 +22,11 @@ export const Inputs: Story = {
 export const Plans: Story = {
   args: {
     fieldGroupData: plansData
+  }
+};
+
+export const Addons: Story = {
+  args: {
+    fieldGroupData: addonsData
   }
 };

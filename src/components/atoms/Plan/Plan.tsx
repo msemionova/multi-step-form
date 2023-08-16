@@ -20,7 +20,7 @@ const Plan = ({
         <div className={classes} />
         <h3>{id}</h3>
         <span>{`${currency}${price}`}</span>
-        {type === 'monthly' && <p>2 monts free</p>}
+        {type === 'yearly' && <p>2 monts free</p>}
       </label>
     </div>
   );

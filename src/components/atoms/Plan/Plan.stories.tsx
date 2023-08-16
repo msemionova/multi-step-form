@@ -9,7 +9,7 @@ const meta: Meta<typeof Plan> = {
 export default meta;
 type Story = StoryObj<typeof Plan>;
 
-export const ArcadeActive: Story = {
+export const ArcadeChecked: Story = {
   args: {
     id: 'arcade',
     priceMonthly: 5,

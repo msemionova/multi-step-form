@@ -5,7 +5,7 @@ export default function PaymentType() {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <fieldset className={styles['payment-type']}>
+    <div className={styles['payment-type']}>
       <h4 className={isMonthly ? styles['active'] : ''}>Monthly</h4>
       <label className={styles['switch']}>
         <input
@@ -14,6 +14,6 @@ export default function PaymentType() {
         <span className={styles['slider']}></span>
       </label>
       <h4 className={!isMonthly ? styles['active'] : ''}>Yearly</h4>
-    </fieldset>
+    </div>
   );
 }

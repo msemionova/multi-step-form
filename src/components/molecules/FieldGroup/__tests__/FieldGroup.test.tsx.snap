@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<FieldGroup /> renders correctly 1`] = `
-<div
+<fieldset
   className="field-group"
 >
   <div
@@ -62,5 +62,5 @@ exports[`<FieldGroup /> renders correctly 1`] = `
       type="tel"
     />
   </div>
-</div>
+</fieldset>
 `;

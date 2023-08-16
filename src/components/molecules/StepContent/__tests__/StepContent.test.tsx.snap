@@ -14,7 +14,7 @@ exports[`<StepContent /> renders correctly 1`] = `
       Please provide your name, email address, and phone number.
     </p>
   </div>
-  <div
+  <fieldset
     className="field-group"
   >
     <div
@@ -75,7 +75,7 @@ exports[`<StepContent /> renders correctly 1`] = `
         type="tel"
       />
     </div>
-  </div>
+  </fieldset>
   <div
     className="buttons"
   >

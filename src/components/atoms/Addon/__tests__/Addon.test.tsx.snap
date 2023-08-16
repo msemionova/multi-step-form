@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Addon /> renders correctly without required nor label... 1`] = `
+<div>
+  <input
+    defaultChecked={true}
+    id="addon"
+    name="addons"
+    type="checkbox"
+    value="addon"
+  />
+  <label
+    className="addon"
+    htmlFor="addon"
+  >
+    <div>
+      <h3>
+        Addon Title
+      </h3>
+      <span
+        className="description"
+      >
+        Addon Description
+      </span>
+    </div>
+    <span
+      className="price"
+    >
+      +$9/mo
+    </span>
+  </label>
+</div>
+`;

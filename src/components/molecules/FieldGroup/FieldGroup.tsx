@@ -1,6 +1,6 @@
 import styles from './FieldGroup.module.scss';
 import { FieldGroupProps } from './FieldGroup.types';
-import { Input, Plan, PaymentType } from 'src/components/atoms';
+import { Input, Plan, PaymentType, Addon } from 'src/components/atoms';
 
 export default function FieldGroup({ fieldGroupData }: FieldGroupProps) {
   let html, plans;
@@ -33,22 +33,33 @@ export default function FieldGroup({ fieldGroupData }: FieldGroupProps) {
       );
 
       html = <>
-        <fieldset className={styles['plans']}>
+        <div className={styles['plans']}>
           {plans}
-        </fieldset>
+        </div>
         <PaymentType />
       </>;
       break;
     }
     case 'addons': {
-      html = <div>Addons</div>;
+      html = fieldGroupData?.fields.map((addon, index) =>
+        <Addon
+          key={`addon_${Math.random()}`}
+          id={addon.id}
+          title={addon.title}
+          description={addon.description}
+          priceMonthly={addon.priceMonthly}
+          priceYearly={addon.priceYearly}
+          currency={addon.currency}
+          isChecked={index === 0}
+        />
+      );
       break;
     }
   }
 
   return (
-    <div className={styles['field-group']}>
+    <fieldset className={styles['field-group']}>
       {html}
-    </div>
+    </fieldset>
   );
 }

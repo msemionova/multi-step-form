@@ -4,27 +4,24 @@ exports[`<Plan /> renders correctly without required nor label... 1`] = `
 <div>
   <input
     defaultChecked={true}
-    id="arcade"
+    id="plan"
     name="plans"
     type="radio"
-    value="arcade"
+    value="plan"
   />
   <label
     className="plan"
-    htmlFor="arcade"
+    htmlFor="plan"
   >
     <div
-      className="icon icon--arcade"
+      className="icon icon--plan"
     />
     <h3>
-      arcade
+      plan
     </h3>
     <span>
       $9/mo
     </span>
-    <p>
-      2 monts free
-    </p>
   </label>
 </div>
 `;

@@ -1,0 +1,55 @@
+.addon {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-medium);
+  border: var(--border-secondary);
+  transition: background-color, border 200ms;
+  padding: 2rem 1.6rem;
+  margin-bottom: 1.4rem;
+  cursor: pointer;
+
+  h3 {
+    font: var(--typography-input-text);
+  }
+
+  &::before {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-small);
+    border: var(--border-secondary);
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .addon {
+  background-color: var(--color-gray-background);
+  border: var(--border-primary);
+
+  &::before {
+    background: no-repeat center/60% url("~/public/assets/images/icon-checkmark.svg");
+    background-color: var(--color-primary-dark);
+    border: var(--border-primary);
+  }
+}
+
+.description,
+.price {
+  font: var(--typography-input-label);
+}
+
+.description {
+  color: var(--color-gray-text-light);
+}
+
+.price {
+  text-align: right;
+  flex: 1 1 auto;
+  color: var(--color-primary-dark);
+}

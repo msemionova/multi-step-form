@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<PaymentType /> renders correctly 1`] = `
-<fieldset
+<div
   className="payment-type"
 >
   <h4
@@ -26,5 +26,5 @@ exports[`<PaymentType /> renders correctly 1`] = `
   >
     Yearly
   </h4>
-</fieldset>
+</div>
 `;

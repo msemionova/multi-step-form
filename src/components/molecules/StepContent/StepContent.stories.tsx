@@ -21,3 +21,9 @@ export const Step2: Story = {
     stepData: formData[1]
   }
 };
+
+export const Step3: Story = {
+  args: {
+    stepData: formData[2]
+  }
+};
