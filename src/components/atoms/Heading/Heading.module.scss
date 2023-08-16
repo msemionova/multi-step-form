@@ -3,8 +3,13 @@
     font: var(--typography-desktop-heading);
     margin-bottom: 1.6rem;
   }
+
   p {
     font: var(--typography-paragraph);
     color: var(--color-gray-text);
+  }
+
+  &--centered {
+    text-align: center;
   }
 }

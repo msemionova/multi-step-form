@@ -27,3 +27,15 @@ export const Step3: Story = {
     stepData: formData[2]
   }
 };
+
+export const StepSummary: Story = {
+  args: {
+    stepData: formData[3]
+  }
+};
+
+export const StepThanks: Story = {
+  args: {
+    stepData: formData[4]
+  }
+};

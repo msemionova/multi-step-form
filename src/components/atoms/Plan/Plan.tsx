@@ -11,13 +11,13 @@ const Plan = ({
 }: PlanProps) => {
   const price: string =
     type === 'monthly' ? `${String(priceMonthly)}/mo` : `${String(priceYearly)}/yr`;
-  const classes: string = [styles['icon'], styles[`icon--${id}`]].filter(Boolean).join(' ');
+  const iconClasses: string = [styles.icon, styles[`icon--${id}`]].filter(Boolean).join(' ');
 
   return (
     <div>
       <input type='radio' name='plans' id={id} value={id} defaultChecked={isChecked} />
-      <label className={styles['plan']} htmlFor={id}>
-        <div className={classes} />
+      <label className={styles.plan} htmlFor={id}>
+        <i className={iconClasses} />
         <h3>{id}</h3>
         <span>{`${currency}${price}`}</span>
         {type === 'yearly' && <p>2 monts free</p>}

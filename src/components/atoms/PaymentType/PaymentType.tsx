@@ -6,14 +6,14 @@ export default function PaymentType() {
 
   return (
     <div className={styles['payment-type']}>
-      <h4 className={isMonthly ? styles['active'] : ''}>Monthly</h4>
-      <label className={styles['switch']}>
+      <h4 className={isMonthly ? styles.active : ''}>Monthly</h4>
+      <label className={styles.switch}>
         <input
           type='checkbox'
           onChange={() => setIsMonthly(!isMonthly)} defaultChecked={!isMonthly} />
-        <span className={styles['slider']}></span>
+        <span className={styles.slider}></span>
       </label>
-      <h4 className={!isMonthly ? styles['active'] : ''}>Yearly</h4>
+      <h4 className={!isMonthly ? styles.active : ''}>Yearly</h4>
     </div>
   );
 }

@@ -13,7 +13,7 @@ exports[`<Plan /> renders correctly without required nor label... 1`] = `
     className="plan"
     htmlFor="plan"
   >
-    <div
+    <i
       className="icon icon--plan"
     />
     <h3>

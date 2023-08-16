@@ -17,12 +17,12 @@ const Addon = ({
   return (
     <div>
       <input type='checkbox' name='addons' id={id} value={id} defaultChecked={isChecked} />
-      <label className={styles['addon']} htmlFor={id}>
+      <label className={styles.addon} htmlFor={id}>
         <div>
           <h3>{title}</h3>
-          <span className={styles['description']}>{description}</span>
+          <span className={styles.description}>{description}</span>
         </div>
-        <span className={styles['price']}>{`+${currency}${price}`}</span>
+        <span className={styles.price}>{`+${currency}${price}`}</span>
       </label>
     </div>
   );

@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Summary /> renders correctly 1`] = `
+<div
+  className="summary"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="head"
+    >
+      <div>
+        <h3>
+          arcade (monthly)
+        </h3>
+        <button
+          aria-label=""
+          className="button button--transparent"
+          data-testid=""
+          id=""
+          onClick={[Function]}
+        >
+          <span>
+            Change
+          </span>
+        </button>
+      </div>
+      <span>
+        $9/mo
+      </span>
+    </div>
+    <ul
+      className="list"
+    >
+      <li>
+        <p>
+          Online service
+        </p>
+        <span>
+          $1/mo
+        </span>
+      </li>
+      <li>
+        <p>
+          Larger storage
+        </p>
+        <span>
+          $2/mo
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="total"
+  >
+    <p>
+      Total (per 
+      month
+      )
+    </p>
+    <span>
+      $12/mo
+    </span>
+  </div>
+</div>
+`;

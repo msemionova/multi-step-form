@@ -3,11 +3,11 @@ import { FieldGroupProps } from './FieldGroup.types';
 import { Input, Plan, PaymentType, Addon } from 'src/components/atoms';
 
 export default function FieldGroup({ fieldGroupData }: FieldGroupProps) {
-  let html, plans;
+  let content;
 
   switch (fieldGroupData?.type) {
     case 'inputs': {
-      html = fieldGroupData?.fields.map(input =>
+      content = fieldGroupData?.fields.map(input =>
         <Input
           key={`input_${Math.random()}`}
           id={input.id}
@@ -21,7 +21,7 @@ export default function FieldGroup({ fieldGroupData }: FieldGroupProps) {
       break;
     }
     case 'plans': {
-      plans = fieldGroupData?.fields.map((plan, index) =>
+      const plans = fieldGroupData?.fields.map((plan, index) =>
         <Plan
           key={`plan_${Math.random()}`}
           id={plan.id}
@@ -32,8 +32,8 @@ export default function FieldGroup({ fieldGroupData }: FieldGroupProps) {
         />
       );
 
-      html = <>
-        <div className={styles['plans']}>
+      content = <>
+        <div className={styles.plans}>
           {plans}
         </div>
         <PaymentType />
@@ -41,7 +41,7 @@ export default function FieldGroup({ fieldGroupData }: FieldGroupProps) {
       break;
     }
     case 'addons': {
-      html = fieldGroupData?.fields.map((addon, index) =>
+      content = fieldGroupData?.fields.map((addon, index) =>
         <Addon
           key={`addon_${Math.random()}`}
           id={addon.id}
@@ -59,7 +59,7 @@ export default function FieldGroup({ fieldGroupData }: FieldGroupProps) {
 
   return (
     <fieldset className={styles['field-group']}>
-      {html}
+      {content}
     </fieldset>
   );
 }
