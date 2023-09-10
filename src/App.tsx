@@ -1,4 +1,5 @@
-import RegistrationForm from './components/organisms/RegistrationForm/RegistrationForm';
+import { RegistrationForm } from './components/organisms';
+import './styles/main.scss';
 
 function App() {
   return (

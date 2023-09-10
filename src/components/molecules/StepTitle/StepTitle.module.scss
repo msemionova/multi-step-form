@@ -1,0 +1,24 @@
+.step {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+
+  h2, span {
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font: var(--typography-step-title);
+    color: var(--color-gray-background);
+    letter-spacing: .1rem;
+  }
+
+  span {
+    font: var(--typography-step-label);
+    color: var(--color-gray-line);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+}

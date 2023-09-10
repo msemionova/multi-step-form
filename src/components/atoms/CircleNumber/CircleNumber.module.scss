@@ -1,0 +1,17 @@
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.6rem;
+  width: 3.6rem;
+  border: var(--border-white);
+  border-radius: var(--border-radius-round);
+  color: var(--color-white);
+  font: var(--typography-step-number);
+}
+
+.active {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-black-text);
+}

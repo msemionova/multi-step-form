@@ -1,0 +1,12 @@
+.field-group {
+  flex: 1 1 100%;
+}
+
+.plans {
+  display: flex;
+  gap: 1.6rem;
+
+  div {
+    flex: 1 1 100%;
+  }
+}

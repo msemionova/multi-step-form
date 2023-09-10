@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Plan /> renders correctly without required nor label... 1`] = `
+<div>
+  <input
+    defaultChecked={true}
+    id="plan"
+    name="plans"
+    type="radio"
+    value="plan"
+  />
+  <label
+    className="plan"
+    htmlFor="plan"
+  >
+    <i
+      className="icon icon--plan"
+    />
+    <h3>
+      plan
+    </h3>
+    <span>
+      $9/mo
+    </span>
+  </label>
+</div>
+`;

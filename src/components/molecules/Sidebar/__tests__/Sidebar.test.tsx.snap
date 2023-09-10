@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Sidebar /> renders correctly 1`] = `
+<div
+  className="sidebar"
+>
+  <div
+    className="step"
+  >
+    <div
+      className="circle active"
+    >
+      1
+    </div>
+    <div>
+      <span>
+        Step 1
+      </span>
+      <h2>
+        Your info
+      </h2>
+    </div>
+  </div>
+  <div
+    className="step"
+  >
+    <div
+      className="circle"
+    >
+      2
+    </div>
+    <div>
+      <span>
+        Step 2
+      </span>
+      <h2>
+        Select plan
+      </h2>
+    </div>
+  </div>
+  <div
+    className="step"
+  >
+    <div
+      className="circle"
+    >
+      3
+    </div>
+    <div>
+      <span>
+        Step 3
+      </span>
+      <h2>
+        Add-ons
+      </h2>
+    </div>
+  </div>
+  <div
+    className="step"
+  >
+    <div
+      className="circle"
+    >
+      4
+    </div>
+    <div>
+      <span>
+        Step 4
+      </span>
+      <h2>
+        Summary
+      </h2>
+    </div>
+  </div>
+  <div
+    className="step"
+  >
+    <div
+      className="circle"
+    >
+      5
+    </div>
+    <div>
+      <span>
+        Step 5
+      </span>
+      <h2>
+        Thank you!
+      </h2>
+    </div>
+  </div>
+</div>
+`;

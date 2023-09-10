@@ -1,0 +1,6 @@
+build/**
+coverage/**
+node_modules/**
+storybook-static/**
+test-reports/**
+jest.config.ts
